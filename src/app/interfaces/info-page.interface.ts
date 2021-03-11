@@ -1,4 +1,4 @@
-export interface InfoPage {
+interface InfoPage {
   titulo?: string;
   email?: string;
   nombre_corto?: string;
@@ -9,3 +9,15 @@ export interface InfoPage {
   tumblr?: string;
   equipo_trabajo?: any[];
 }
+
+
+interface AboutPage {
+  frase?: string;
+  nombre?: string;
+  subtitulo?: string;
+  twitter?: string;
+  url?: string;
+}
+
+export {InfoPage, AboutPage};
+
