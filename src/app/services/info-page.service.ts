@@ -16,8 +16,6 @@ export class InfoPageService {
     .subscribe((resp: InfoPage) => {
       this.cargada = true;
       this.info = resp;
-      // tslint:disable-next-line: no-string-literal
-      console.log( resp.email );
     });
   }
 
