@@ -8,12 +8,9 @@ import { AboutPage, InfoPage } from '../interfaces/info-page.interface';
 export class InfoPageService {
 
   info: InfoPage = {};
-  aboutInfo: AboutPage[] = [];
   cargada = false;
 
   constructor(private http: HttpClient) {
-    console.log('Info pagina services');
-    // Aqui leemos el archivo JSON
     this.http.get('assets/data/data-pages.json')
     // tslint:disable-next-line: deprecation
     .subscribe((resp: InfoPage) => {

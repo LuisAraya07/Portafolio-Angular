@@ -47,3 +47,12 @@
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft;
 }
+
+
+/*
+  Color del Loading
+*/
+svg path,
+svg rect{
+  fill: red;
+}

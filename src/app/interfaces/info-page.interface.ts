@@ -19,5 +19,13 @@ interface AboutPage {
   url?: string;
 }
 
-export {InfoPage, AboutPage};
+interface Productos {
+  cod?: string;
+  url?: string;
+  titulo?: string;
+  categoria?: string;
+}
+
+
+export {InfoPage, AboutPage, Productos};
 
